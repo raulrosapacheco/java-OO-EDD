@@ -1,0 +1,39 @@
+package br.ucsal;
+
+import java.util.Scanner;
+
+public class Pratica37 {
+/* Elabore uma solução para construir uma calculadora com quatro operações básicas. Cada operação deverá ser construída em um método 
+ * específico. A impressão dos resultados deve estar centralizada em um método específico chamado "impressão" e o método "main" 
+ * deve ser utilizado apenas para iniciar a execução da solução. */
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite dois números");
+		double x = sc.nextDouble();
+		double y = sc.nextDouble();
+		soma(x, y);
+		subtracao(x, y);
+		multiplicacao(x,y);
+		divisao(x,y);
+	}
+	
+	public static double soma(double parc1, double parc2) {
+		return parc1 + parc2;
+	}
+	
+	public static double subtracao(double parc1, double parc2) {
+		return parc1 - parc2;
+	}
+	
+	public static double multiplicacao(double parc1, double parc2) {
+		return parc1 * parc2;
+	}
+	
+	public static double divisao(double parc1, double parc2) {
+		return parc1 / parc2;
+	}
+	
+	public static void impressao(String msg) {
+		System.out.println(msg);
+	}
+}

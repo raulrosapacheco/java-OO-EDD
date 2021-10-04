@@ -1,0 +1,23 @@
+package br.ucsal;
+
+import java.util.Scanner;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = 0;
+		for (int i = 0; (a < 40 || a > 70) && i < 3; i ++) {
+			System.out.println("Digite o primeiro termo da sequência dentro de um intervalo fechado de 40 a 70");
+			a = sc.nextInt();
+		}
+		if (a < 40 || a > 70) {
+			System.out.println("Limite de erros atingidos - fim da execução");
+		} else {
+			for (; a < 675; a+=5) {
+				System.out.print(a + " ");
+			}
+		}
+		sc.close();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;questão05.ContaBancaria&apos; to &apos;ContaBancariaSet&apos;&#x0D;&#x0A;- Original project: &apos;questão05&apos;&#x0D;&#x0A;- Original element: &apos;questão05.ContaBancaria&apos;&#x0D;&#x0A;- Renamed element: &apos;questão05.ContaBancariaSet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ContaBancaria&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;questão05{ContaBancaria.java[ContaBancaria" matchStrategy="1" name="ContaBancariaSet" qualified="false" references="true" similarDeclarations="false" stamp="1615655560938" textual="false" version="1.0"/>
+</session>

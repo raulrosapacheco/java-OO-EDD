@@ -1,0 +1,50 @@
+package menuJogo;
+
+import java.util.Scanner;
+
+import jogodaForca.Executor;
+
+public class MenuJogos {
+
+	public static void escolherJogo() {
+		CadastroUsuario obj = new CadastroUsuario();
+		int status=0;
+		
+		while (status == 0) {
+			
+			
+		
+		System.out.println(obj.getNome()+" escolha qual dos Jogos você deseja jogar: ");
+		System.out.println("(1) Jogo da Forca \n(2) Batalha Naval \n(3) Jogo da Velha \n(4) Sair");
+		
+		Scanner ac = new Scanner(System.in);
+
+		String n = ac.next();
+		
+		
+
+		switch (n) {
+		case "1":
+			jogodaForca.Executor.executor();
+			break;
+		case "2":
+			batalhaNaval.BatalhaNaval.executor();
+			break;
+		case "3":
+			System.out.println("Escolha 3");
+			break;
+		case "4":
+			System.exit(0);
+			status = 1;
+			break;
+		default:
+			System.out.println("");
+			System.out.println("Essa opção não existe por favor tente novamente");
+			System.out.println("");
+			break;
+		}
+		}
+
+
+	}
+}

@@ -1,0 +1,27 @@
+package br.ucsal;
+
+public class Questão4 {
+
+	public static void main(String[] args) {
+		int a = 1, b = 2, c, n = 0, soma = 0, cont1 = 0, cont2 = 0, penultimo = 0;
+		do {
+			c = a + b; 
+			System.out.print(a + " ");
+			if (a % 2 == 0 && a % 6 == 0) 
+				cont1++;
+			if (a % 2 != 0 && a % 3 ==0)
+				cont2++;
+			soma += a;
+			n++;
+			if (n == 29) 
+				penultimo = a;
+			a = b;
+			b = c;		
+		} while (n < 30);
+		System.out.println("\nSoma dos valores da sequência: " + soma);
+		System.out.println("Quatidade de números pares divisíveis por 6: " + cont1);
+		System.out.println("Quatidade de números ímpares divisíveis por 3: " + cont2);
+		System.out.println("O penúltimo valor da sequência: " + penultimo);
+	}
+
+}

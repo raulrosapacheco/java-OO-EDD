@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Arvore.java&apos; to &apos;desafio-arvore/src/arvore&apos;&#x0D;&#x0A;- Original project: &apos;conjunto&apos;&#x0D;&#x0A;- Destination element: &apos;desafio-arvore/src/arvore&apos;&#x0D;&#x0A;- Original element: &apos;conjunto.Arvore.java&apos;" description="Copy compilation unit" destination="=desafio-arvore/src&lt;arvore" element1="/src&lt;conjunto{Arvore.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1621710444734" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package br.ucsal.bes20202;
+
+public class Atividade01 {
+
+	public static void main(String[] args) {
+		
+		String texto = "Bruno";
+		
+		System.out.println(texto);
+
+	}
+
+}

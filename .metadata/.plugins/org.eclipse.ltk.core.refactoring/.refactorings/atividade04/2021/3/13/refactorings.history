@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;br.ucsal.bes20211.poo.atividade04&apos; to &apos;ligaDeFutebol/src&apos;&#x0D;&#x0A;- Original project: &apos;atividade04&apos;&#x0D;&#x0A;- Destination element: &apos;ligaDeFutebol/src&apos;&#x0D;&#x0A;- Original element: &apos;atividade04/src/br.ucsal.bes20211.poo.atividade04&apos;" description="Copy package" destination="=ligaDeFutebol/src" element1="/src&lt;br.ucsal.bes20211.poo.atividade04" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1616427221856" version="1.0"/>
+</session>

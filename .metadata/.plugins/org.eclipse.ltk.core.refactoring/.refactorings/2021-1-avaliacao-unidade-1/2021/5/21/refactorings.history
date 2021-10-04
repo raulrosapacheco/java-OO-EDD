@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MenuOpcoesEnum.java&apos; to &apos;Passby/src/br.ucsal.bes20211.poo.passby.tui&apos;&#x0D;&#x0A;- Original project: &apos;2021-1-avaliacao-unidade-1&apos;&#x0D;&#x0A;- Destination element: &apos;Passby/src/br.ucsal.bes20211.poo.passby.tui&apos;&#x0D;&#x0A;- Original element: &apos;br.ucsal.bes20211.poo.avaliacao_unidade1.tui.MenuOpcoesEnum.java&apos;" description="Copy compilation unit" destination="=Passby/src&lt;br.ucsal.bes20211.poo.passby.tui" element1="/src&lt;br.ucsal.bes20211.poo.avaliacao_unidade1.tui{MenuOpcoesEnum.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1621542661404" units="1" version="1.0"/>
+</session>

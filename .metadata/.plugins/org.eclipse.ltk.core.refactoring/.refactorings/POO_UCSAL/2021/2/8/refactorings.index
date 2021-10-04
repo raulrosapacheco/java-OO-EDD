@@ -1,0 +1,5 @@
+1613648048191	Rename type 'Revisao1'
+1613648282862	Extract method 'obterNota'
+1613648342842	Extract method 'calcularConceito'
+1613648418317	Extract method 'imprimirConceito'
+1613649362998	Move compilation unit

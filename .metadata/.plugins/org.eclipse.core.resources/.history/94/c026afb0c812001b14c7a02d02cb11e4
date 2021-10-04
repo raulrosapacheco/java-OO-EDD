@@ -1,0 +1,75 @@
+package br.ucsal;
+
+import java.util.Scanner;
+
+public class Pratica37 {
+/* Elabore uma solução para construir uma calculadora com quatro operações básicas. Cada operação deverá ser construída em um método 
+ * específico. A impressão dos resultados deve estar centralizada em um método específico chamado "impressão" e o método "main" 
+ * deve ser utilizado apenas para iniciar a execução da solução. */
+	public static void main(String[] args) {
+		escolha();
+	}
+	
+	// Obter valores e a escolha da operação.
+	public static void escolha() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Digite 1º número: ");
+		double x = sc.nextDouble();
+		System.out.print("Digite 2º número: ");
+		double y = sc.nextDouble();
+		System.out.print("Informe a operação que deseja realizar:"
+				+ "\n(1) Soma \n(2) Subtração \n(3) Multiplicação \n(4) Divisão \n=> ");
+		int opcao = sc.nextInt();
+		executor(x, y, opcao);
+	}
+	
+	//Exercutar a escolha da operação
+	public static void executor(double x, double y, int escolha) {
+		double resultado;
+		switch (escolha) {
+		case 1:
+			resultado = soma(x, y);
+			break;
+		case 2:
+			resultado = subtracao(x, y);
+			break;
+		case 3:
+			resultado = multiplicacao(x, y);
+			break;
+		case 4:
+			resultado = divisao(x, y);
+			break;
+		default:
+			resultado = 0;
+			break;
+		}
+		if (resultado == 0) 
+			impressao("A operação escolhida não existe");
+		else
+		impressao("Resultado: ", resultado);
+		
+	}
+	public static double soma(double parc1, double parc2) {
+		return parc1 + parc2;
+	}
+	
+	public static double subtracao(double parc1, double parc2) {
+		return parc1 - parc2;
+	}
+	
+	public static double multiplicacao(double parc1, double parc2) {
+		return parc1 * parc2;
+	}
+	
+	public static double divisao(double parc1, double parc2) {
+		return parc1 / parc2;
+	}
+	
+	public static void impressao(String msg) {
+		System.out.println("\n" + msg);
+	}
+	
+	public static void impressao(String msg, double valor) {
+		System.out.printf("\n%s%.2f",msg, valor);
+	}
+}

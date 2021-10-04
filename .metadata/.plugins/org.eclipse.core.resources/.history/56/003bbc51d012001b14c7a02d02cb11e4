@@ -1,0 +1,99 @@
+package br.ucsal;
+
+import java.util.Scanner;
+
+public class Pratica38 {
+	/* A escala Celsius possui o ponto zero na temperatura que a água congela e 100ºC na temperatura que a água ferve, as medidas. 
+	 * A escala Fahrenheit tem o congelamento da água em 32°F e a ebulição em 212°F. A escala Kelvin congela a água em 273 (K) e ferve 
+	 * a 373 K. Fonte: http://www.infoescola.com/fisica/conversao-de-escalas-termometricas/
+	 * A partir do texto acima, crie um ConversorDeTemperatura na qual cada método deverá implementar o cálculo necessário para 
+	 * conversão específica da temperatura. As conversões são:
+	 * (1) De Celsius para Kelvin; (2) De Kelvin para Celsius; (3) De Celsius para Fahrenheit; (4) De Fahrenheit para Celsius; 
+	 * (5) De Kelvin para Fahrenheit; (6) De Fahrenheit para Kelvin.
+	 * É importante que:
+	 * 1. Cada conversão seja feita em um método especifico.
+	 * 2. A metodo "main" deverá ser usado para disparar a solução
+	 * 3. O método "0bterDados" deverá obter os dados necessários para efetuar as devidas conversões de temperatura.
+	 * 4. Não deverá ocorrer nenhuma instrução de impressão (System.out.print ...) em nenhum método exceto o método "impressão" 
+	 * criado especificamente para essa finalidade.
+	 * 5. Ao final, o algoritmo deverá apresentar o resultado para o usuário. */
+	public static void main(String[] args) {
+		obterDados();
+	}
+
+	public static void obterDados() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite o valor da temperatura");
+		double temp = sc.nextDouble();
+		System.out.println("Qual conversão deseja realizar: \n(1) De Celsius para Kelvin; \n(2) De Kelvin para Celsius; "
+				+ "\n(3) De Celsius para Fahrenheit; \n(4) De Fahrenheit para Celsius; \n(5) De Kelvin para Fahrenheit; "
+				+ "\n(6) De Fahrenheit para Kelvin.");
+		int opcao = sc.nextInt();
+		executor(temp, opcao);
+		sc.close();
+	}
+	
+	public static void executor(double temp, int opcao) {
+		double resultado;
+		switch (opcao) {
+		case 1:
+			resultado = ck(temp);
+			break;
+		case 2:
+			resultado = kc(temp);
+			break;
+		case 3:
+			resultado = cf(temp);
+			break;
+		case 4:
+			resultado = fc(temp);
+			break;
+		case 5:
+			resultado = kf(temp);
+			break;
+		case 6:
+			resultado = fk(temp);
+			break;	
+		default:
+			resultado = 0;
+			break;
+		}
+		if (resultado == 0) 
+			impressao("A operação escolhida não existe");
+		else
+			impressao("Resultado: ", resultado);
+	}
+	
+	public static double ck(double temp) {
+		return temp + 273;
+	}
+	
+	public static double kc(double temp) {
+		return temp - 273;
+	}
+	
+	public static double cf(double temp) {
+		return 1.8*temp + 32;
+	}
+	
+	public static double fc(double temp) {
+		return (temp - 32) / 1.8;
+	}
+	
+	public static double kf(double temp) {
+		return ((temp - 273)*9/5) + 32;
+	}
+	
+	public static double fk(double temp) {
+		return ((temp - 32)*5/9) + 273;
+	}
+	
+	public static void impressao(String msg) {
+		System.out.println("\n" + msg);
+	}
+
+	public static void impressao(String msg, double valor) {
+		System.out.printf("\n%s%.2f",msg, valor);
+	}
+
+}

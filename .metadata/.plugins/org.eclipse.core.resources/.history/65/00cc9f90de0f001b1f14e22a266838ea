@@ -1,0 +1,32 @@
+package prova;
+
+import java.util.Scanner;
+
+public class Pratica36 {
+/* Utilize a estrutura de repetição for para imprimir uma Progressão Geométrica de razão 5, contendo 10 elementos, 
+ * cujo valor inicial será informado pelo usuário dentro de um intervalo fechado de 50 a 60. 
+ * Considere na solução apresentada que o usuário só poderá errar o valor informado 03 vezes, após essa quantidade de erros a 
+ * solução implementada deverá apresentar a mensagem "Limite de erros atingidos - fim da execução" e, em seguida, finaliza a 
+ * execução e não apresenta a sequencia. (for)
+ */
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = 0;
+		int a = 0;		;
+		for (int i = 0; i < 3 && (num < 50 || num > 60) ; i++) {
+			System.out.println("Digite o 1º número da sequencia:");
+			num = sc.nextInt(); 
+		}
+		if (num < 50 || num > 60) {
+			System.out.println("Limite de erros atingidos - fim da execução");
+		} else {
+			while (a < 10) {
+				num *= 5;
+				System.out.print(num + " ");
+				a++;
+			}
+		}
+		sc.close();
+	}
+
+}

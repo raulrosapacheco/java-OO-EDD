@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;questao03.ProfesorSet&apos; to &apos;ProfessorSet&apos;&#x0D;&#x0A;- Original project: &apos;questao03&apos;&#x0D;&#x0A;- Original element: &apos;questao03.ProfesorSet&apos;&#x0D;&#x0A;- Renamed element: &apos;questao03.ProfessorSet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ProfesorSet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;questao03{ProfesorSet.java[ProfesorSet" matchStrategy="1" name="ProfessorSet" qualified="false" references="true" similarDeclarations="false" stamp="1615654738453" textual="false" version="1.0"/>
+</session>

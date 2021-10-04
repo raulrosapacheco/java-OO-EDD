@@ -1,0 +1,26 @@
+package br.ucsal;
+
+public class Questao3 {
+
+	public static void main(String[] args) {
+		int a = 0, b = 1, c, n = 0;
+		double a4 = 0, a11 = 0, ma;
+		do {
+			c = a + b; 
+			System.out.print(a + " ");
+			n++;
+			if (n == 4) {
+				a4 = a;
+			}
+			if (n == 11) {
+				a11 = a;
+			}
+			a = b;
+			b = c;
+		} while (a < 100000);
+		System.out.println("\nQuatidade de elementos da sequência: " + n);
+		ma = (a4 + a11)/2.;
+		System.out.println("A média aritmética de 4º e do 11º valor da sequência é: " + ma);
+	}
+
+}
